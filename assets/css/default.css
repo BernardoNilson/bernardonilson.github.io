@@ -1,0 +1,100 @@
+/* CONFIGURAÇÕES GERAIS */
+:root {
+    --primary-color: #fffcfc;
+    --hover-color: rgb(213, 223, 255);
+    --secondary-color: #4167e7;
+    --text-color: #141313;
+    font-size: 17px;
+}
+
+::-webkit-scrollbar {
+    width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(171, 171, 171);
+}
+
+/* DEFAULT PAGE */
+* {
+    font-family: "Urbanist", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* PAGES */
+
+main, footer {
+    width: 90%;
+    margin: auto;
+}
+
+footer {
+    text-align: center;
+}
+
+.navbar {
+    padding: 1rem 3rem !important;
+}
+
+.brand {
+    font-weight: 700;
+    font-size: 1.5rem !important;
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.collapse, .navbar-collapse {
+    flex-grow: 0 !important;
+}
+
+.nav-link {
+    color: var(--text-color) !important;
+}
+
+.nav-item:hover a,
+.brand:hover {
+    text-shadow: 0 0 5px var(--hover-color);
+    text-decoration: underline;
+    transition: 0.4s;
+}
+
+.nav-item:hover a {
+    color: var(--secondary-color) !important;
+}
+
+/* SECTION */
+.section {
+    margin: 5rem auto;
+}
+
+/* HOME */
+
+.home {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 3rem;
+    max-width: 60rem;
+}
+
+.home-img img {
+    border-radius: 2rem;
+    max-width: 30rem;
+    height: auto;
+    box-shadow: -4px 4px 20px var(--hover-color);
+}
+.home-img img:hover {
+    box-shadow: -4px 4px 25px 5px var(--hover-color);
+    transition: 0.4s;
+}
+
+/* MOBILE */
+@media screen and (max-width: 1000px) {
+
+    /* DEFAULT PAGE CHANGES */
+    main {
+        max-width: 95%;
+    }
+}
