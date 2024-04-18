@@ -1,0 +1,22 @@
+{% if page.lang == 'en' %}
+{% assign list = site.data.en.experience %}
+{% else %}
+{% assign list = site.data.pt.experience %}
+{% endif %}
+
+<!-- EXPERIÊNCIAS -->
+<section class="section experience" id="experience">
+    <h1 class="section-title">{{ page.experience_title }}</h1>
+    <div class="section-body">
+        <ul class="list-group list-group-flush">
+            {% for experience in list %}
+            <li class="list-group-item">
+                <h2 class="experience-title">{{ experience.title }}</h2>
+                <h6 class="experience-company">{{ experience.company }}</h6>
+                <span class="experience-span">{{ experience.location }} | {{ experience.date }}</span>
+                <p class="experience-description">{{ experience.description }}</p>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>

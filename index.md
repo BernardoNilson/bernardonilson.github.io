@@ -1,8 +1,27 @@
 ---
 layout: default
-title: Prazer, meu nome é Bernardo Nilson!
+lang: pt
+
+intro_title: Prazer, meu nome é <b>Bernardo Nilson</b>!
 intro: >-
-    Apaixonado por tecnologia e em constante aprendizado, sou o Bernardo, um estudante de Ciência da Computação com interesse nas áreas de Software Engineering e Ciência de Dados. Dedicação e entusiasmo definem minha jornada na área. Quer saber mais sobre mim? Me acompanhe!
+  Fico feliz em ver você por aqui. Sou estudante de <b>Ciência da Computação</b> na PUCRS e formado Técnico em Eletrônica pelo IFRS. Minhas habilidades e interesses se concentram em <b>Software Engineering</b> e <b>Data Science</b>.
+  Quer saber mais sobre mim? Me acompanhe!
+
+about_title: Mas, como eu sou <b>fora do trabalho</b>?
+about: >-
+  Antes de entrar no âmbito profissional, quero te contar um pouco do meu lado pessoal: Sou uma pessoa calma e paciente, gosto de estar ao lado das pessoas que me apoiam e me fortalecem. Sou gaúcho, de Porto Alegre. Valorizo bastante o meu tempo livre, seja passeando na Orla do Guaíba, tomando um chimarrão no parque, pedalando ou cozinhando.
+
+experience_title: Experiências
+
+contact_title: Gostou do meu perfil? Tem alguma sugestão?
+contact: Software Engineering e Data Science
+contact_call: Clique aqui para entrar em contato!
 ---
 
 {% include home.html %}
+
+{% include about.html %}
+
+{% include experience.html %}
+
+{% include contact.html %}

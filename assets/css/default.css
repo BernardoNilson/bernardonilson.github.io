@@ -1,100 +1,166 @@
 /* CONFIGURAÇÕES GERAIS */
 :root {
-    --primary-color: #fffcfc;
-    --hover-color: rgb(213, 223, 255);
-    --secondary-color: #4167e7;
-    --text-color: #141313;
-    font-size: 17px;
+  --primary-color: #fffcfc;
+  --hover-color: rgb(196, 209, 253);
+  --secondary-color: #4167e7;
+  --text-color: #141313;
+  --text-light-color: #2e2e2e;
+  font-size: 17px;
 }
 
 ::-webkit-scrollbar {
-    width: 0.4rem;
+  width: 0.4rem;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(171, 171, 171);
+  background: rgb(171, 171, 171);
 }
 
 /* DEFAULT PAGE */
 * {
-    font-family: "Urbanist", sans-serif;
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Urbanist", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* PAGES */
 
-main, footer {
-    width: 90%;
-    margin: auto;
+main,
+footer {
+  width: 60%;
+  margin: auto;
+  padding: 0 auto;
 }
 
 footer {
-    text-align: center;
+  margin-top: 3rem;
+  text-align: center;
 }
 
 .navbar {
-    padding: 1rem 3rem !important;
+  padding: 1rem 3rem !important;
+  background-color: var(--primary-color);
 }
 
 .brand {
-    font-weight: 700;
-    font-size: 1.5rem !important;
-    text-decoration: none;
-    color: var(--text-color);
+  font-weight: 700;
+  font-size: 1.5rem !important;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
-.collapse, .navbar-collapse {
-    flex-grow: 0 !important;
+.collapse,
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 .nav-link {
-    color: var(--text-color) !important;
+  color: var(--text-color) !important;
 }
 
 .nav-item:hover a,
-.brand:hover {
-    text-shadow: 0 0 5px var(--hover-color);
-    text-decoration: underline;
-    transition: 0.4s;
+.brand:hover,
+.experience-title:hover {
+  text-shadow: 0 0 3px var(--hover-color);
+  text-decoration: underline;
+  transition: 0.5s;
 }
 
 .nav-item:hover a {
-    color: var(--secondary-color) !important;
+  color: var(--secondary-color) !important;
 }
 
 /* SECTION */
 .section {
-    margin: 5rem auto;
+  margin: 7rem auto;
+}
+
+.section-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2rem;
+}
+
+.section-img img,
+.carousel {
+  border-radius: 2rem;
+  max-width: 30rem;
+  height: auto;
+  box-shadow: -10px 10px 20px var(--hover-color);
+}
+
+.section-img img:hover,
+.carousel:hover {
+  box-shadow: -10px 10px 25px 5px var(--hover-color);
+  transition: 0.4s;
 }
 
 /* HOME */
 
-.home {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 3rem;
-    max-width: 60rem;
+/* ABOUT */
+
+.about .section-img img {
+  box-shadow: none;
 }
 
-.home-img img {
-    border-radius: 2rem;
-    max-width: 30rem;
-    height: auto;
-    box-shadow: -4px 4px 20px var(--hover-color);
+.about .section-img img,
+.about .carousel {
+  max-width: 20rem;
 }
-.home-img img:hover {
-    box-shadow: -4px 4px 25px 5px var(--hover-color);
-    transition: 0.4s;
+
+/* EXPERIENCE */
+.experience-title {
+  font-weight: bold;
+}
+
+.experience-company {
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.experience-span {
+  color: var(--text-light-color);
+  font-style: italic;
+  display: flex;
+  justify-content: end;
+}
+
+.experience-description {
+  color: var(--text-light-color);
+}
+
+/* CONTACT */
+.contact .section-img img {
+  border-radius: 10rem;
+  max-width: 10rem;
+}
+
+.contact .section-body {
+  display: block;
+  /* flex-direction: column; */
+  align-items: start;
+  /* gap: 2rem; */
+}
+
+.social-icons {
+  margin-top: 1rem;
+}
+
+.social-icons a {
+  text-decoration: none;
+}
+
+.social-icons i {
+  font-size: 2rem;
+  color: var(--text-light-color);
 }
 
 /* MOBILE */
 @media screen and (max-width: 1000px) {
-
-    /* DEFAULT PAGE CHANGES */
-    main {
-        max-width: 95%;
-    }
+  /* DEFAULT PAGE CHANGES */
+  main {
+    max-width: 95%;
+  }
 }
