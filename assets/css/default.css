@@ -29,6 +29,7 @@
 main,
 footer {
   width: 60%;
+  max-width: 1450px;
   margin: auto;
   padding: 0 auto;
 }
@@ -110,6 +111,11 @@ footer {
   max-width: 20rem;
 }
 
+.works .card {
+  max-width: 100%;
+  text-decoration: none;
+}
+
 /* EXPERIENCE */
 .experience-title {
   font-weight: bold;
@@ -131,7 +137,17 @@ footer {
   color: var(--text-light-color);
 }
 
+.card:hover {
+  font-weight: 500;
+  transition: 0.3s;
+}
+/* WORKS */
+.img-fluid {
+  border-radius: 1rem;
+}
+
 /* CONTACT */
+
 .contact .section-img img {
   border-radius: 10rem;
   max-width: 10rem;
@@ -158,9 +174,72 @@ footer {
 }
 
 /* MOBILE */
+@media screen and (max-width: 700px) {
+  /* DEFAULT PAGE CHANGES */
+  main,
+  footer {
+    width: 98%;
+  }
+
+.about .section-img img,
+.about .carousel {
+  max-width: 100% !important;
+}
+
+.about .section-body {
+  flex-direction: column;
+}
+}
+
+/* MOBILE */
 @media screen and (max-width: 1000px) {
   /* DEFAULT PAGE CHANGES */
-  main {
-    max-width: 95%;
+  main,
+  footer {
+    width: 90%;
   }
+
+  .section-img img,
+.carousel {
+  max-width: 10rem;
+  border-radius: 10rem;
+}
+
+.about .section-img img,
+.about .carousel {
+  max-width: 15rem;
+  border-radius: 2rem;
+}
+
+.home .section-body {
+  flex-direction: column-reverse;
+}
+}
+
+/* NOTEBOOK */
+@media screen and (max-width: 1500px) {
+  /* DEFAULT PAGE CHANGES */
+  main,
+  footer {
+    width: 70%;
+  }
+
+  .section-img img,
+.carousel {
+  max-width: 25rem;
+}
+}
+
+/* NOTEBOOK MENOR */
+@media screen and (max-width: 1200px) {
+  /* DEFAULT PAGE CHANGES */
+  main,
+  footer {
+    width: 80%;
+  }
+
+  .section-img img,
+.carousel {
+  max-width: 20rem;
+}
 }

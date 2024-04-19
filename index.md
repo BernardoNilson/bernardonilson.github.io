@@ -11,7 +11,9 @@ about_title: Mas, como eu sou <b>fora do trabalho</b>?
 about: >-
   Antes de entrar no âmbito profissional, quero te contar um pouco do meu lado pessoal: Sou uma pessoa calma e paciente, gosto de estar ao lado das pessoas que me apoiam e me fortalecem. Sou gaúcho, de Porto Alegre. Valorizo bastante o meu tempo livre, seja passeando na Orla do Guaíba, tomando um chimarrão no parque, pedalando ou cozinhando.
 
-experience_title: Experiências
+experience_title: "Acompanhe minhas últimas <b>experiências</b>:"
+
+works_title: Quais são os meus principais projeto em TI?
 
 contact_title: Gostou do meu perfil? Tem alguma sugestão?
 contact: Software Engineering e Data Science
@@ -23,5 +25,7 @@ contact_call: Clique aqui para entrar em contato!
 {% include about.html %}
 
 {% include experience.html %}
+
+{% include works.html %}
 
 {% include contact.html %}

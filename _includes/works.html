@@ -1,0 +1,24 @@
+{% assign list = site.pages | where: 'category', 'works'  %}
+
+{% if page.lang == 'en' %}
+{% assign list = list | where: 'lang', 'en'  %}
+{% else %}
+{% assign list = list | where: 'lang', 'pt' %}
+{% endif %}
+
+<!-- WORKS -->
+<section class="section works" id="works">
+    <h1 class="section-title">{{ page.works_title }}</h1>
+    <div class="section-body">
+            {% for work in list %}
+            <a href="{{ work.url | relative_url }}" class="card">
+                <img src="{{ work.img | relative_url }}" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">{{ work.title }}</h5>
+                    <p>{{ work.description }}</p>
+                    <p>{{ work.technologies }}</p>
+                </div>
+            </a>
+            {% endfor %}
+    </div>
+</section>
