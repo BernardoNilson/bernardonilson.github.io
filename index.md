@@ -13,7 +13,8 @@ about: >-
 
 experience_title: "Acompanhe minhas últimas <b>experiências</b>:"
 
-works_title: Quais são os meus principais projeto em TI?
+works_title: Quais são os meus <b>principais projetos</b> em TI?
+works_call: Confira aqui!
 
 contact_title: Gostou do meu perfil? Tem alguma sugestão?
 contact: Software Engineering e Data Science

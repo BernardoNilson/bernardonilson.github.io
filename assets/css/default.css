@@ -1,7 +1,7 @@
 /* CONFIGURAÇÕES GERAIS */
 :root {
   --primary-color: #fffcfc;
-  --hover-color: rgb(196, 209, 253);
+  --hover-color: rgb(213, 223, 255);
   --secondary-color: #4167e7;
   --text-color: #141313;
   --text-light-color: #2e2e2e;
@@ -138,13 +138,18 @@ footer {
 }
 
 .card:hover {
-  font-weight: 500;
+  font-weight: 450;
   transition: 0.3s;
 }
 /* WORKS */
 .img-fluid {
   border-radius: 1rem;
 }
+
+.works .card-title {
+  font-weight: bold;
+}
+
 
 /* CONTACT */
 

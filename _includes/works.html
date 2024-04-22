@@ -15,8 +15,9 @@
                 <img src="{{ work.img | relative_url }}" class="card-img-top" alt="...">
                 <div class="card-body">
                     <h5 class="card-title">{{ work.title }}</h5>
-                    <p>{{ work.description }}</p>
-                    <p>{{ work.technologies }}</p>
+                    <p class="card_description">{{ work.description }}</p>
+                    <p class="card-tech">{{ work.technologies }}</p>
+                    <button href="{{ work.url | relative_url }}" class="btn btn-secondary">{{ page.works_call }}</button>
                 </div>
             </a>
             {% endfor %}
