@@ -111,11 +111,6 @@ footer {
   max-width: 20rem;
 }
 
-.works .card {
-  max-width: 100%;
-  text-decoration: none;
-}
-
 /* EXPERIENCE */
 .experience-title {
   font-weight: bold;
@@ -150,6 +145,32 @@ footer {
   font-weight: bold;
 }
 
+.works .card {
+  text-decoration: none;
+}
+
+.works .section-body {
+  display: flex;
+  flex-direction: row;
+}
+
+/* EDUCATION */
+.education-name {
+  font-weight: bold;
+}
+
+.education-school {
+  color: var(--text-light-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.education-span {
+  color: var(--text-light-color);
+  font-style: italic;
+  display: flex;
+  justify-content: end;
+}
 
 /* CONTACT */
 
@@ -186,14 +207,14 @@ footer {
     width: 98%;
   }
 
-.about .section-img img,
-.about .carousel {
-  max-width: 100% !important;
-}
+  .about .section-img img,
+  .about .carousel {
+    max-width: 100% !important;
+  }
 
-.about .section-body {
-  flex-direction: column;
-}
+  .about .section-body {
+    flex-direction: column;
+  }
 }
 
 /* MOBILE */
@@ -205,20 +226,24 @@ footer {
   }
 
   .section-img img,
-.carousel {
-  max-width: 10rem;
-  border-radius: 10rem;
-}
+  .carousel {
+    max-width: 10rem;
+    border-radius: 10rem;
+  }
 
-.about .section-img img,
-.about .carousel {
-  max-width: 15rem;
-  border-radius: 2rem;
-}
+  .about .section-img img,
+  .about .carousel {
+    max-width: 15rem;
+    border-radius: 2rem;
+  }
 
-.home .section-body {
-  flex-direction: column-reverse;
-}
+  .home .section-body {
+    flex-direction: column-reverse;
+  }
+
+  .works .section-body {
+    flex-direction: column;
+  }
 }
 
 /* NOTEBOOK */
@@ -230,9 +255,9 @@ footer {
   }
 
   .section-img img,
-.carousel {
-  max-width: 25rem;
-}
+  .carousel {
+    max-width: 25rem;
+  }
 }
 
 /* NOTEBOOK MENOR */
@@ -244,7 +269,7 @@ footer {
   }
 
   .section-img img,
-.carousel {
-  max-width: 20rem;
-}
+  .carousel {
+    max-width: 20rem;
+  }
 }

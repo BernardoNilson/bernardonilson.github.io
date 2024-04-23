@@ -3,7 +3,7 @@ layout: default
 lang: pt
 category: works
 
-img: /assets/img/lad_site.png
+img: /assets/img/lablad-site/lablad-site.png
 title: Website do LabLAD
 technologies: Jekyll, HTML, CSS, Bootstrap e JavaScript
 description: Desenvolvi um site para facilitar o acesso a informações importantes sobre o LabLAD, como o manual de utilização do laboratório, o canal de tutoriais no YouTube e a página de impactos na pesquisa da Universidade.
@@ -24,10 +24,11 @@ Para o desenvolvimento do site, utilizei o Jekyll, um programa escrito em Ruby q
 Foi uma ótima oportunidade de conhecer novas tecnologias de desenvolvimento web e contribuir para o laboratório. O site já está em uso e está sendo bem avaliado pelos usuários.
 
 Aqui estão alguns dos benefícios do novo site:
+
 - Informações sempre atualizadas: O site é atualizado automaticamente, garantindo que os usuários sempre tenham acesso às informações mais recentes.
 - Acesso fácil: O site é acessível a partir de qualquer dispositivo com conexão à internet.
 - Design responsivo: O site se adapta a diferentes tamanhos de tela, proporcionando uma melhor experiência de navegação.
 
-Se você estiver interessado em conhecer o site, acesse o link https://lnkd.in/dHbCwtHX
+Se você estiver interessado em conhecer o site, acesse o link [https://lad-pucrs.github.io/](https://lad-pucrs.github.io/)
 
 Obrigado pela sua atenção!

@@ -1,0 +1,21 @@
+{% if page.lang == 'en' %}
+{% assign list = site.data.en.education %}
+{% else %}
+{% assign list = site.data.pt.education %}
+{% endif %}
+
+<!-- EDUCAÇÂO -->
+<section class="section education" id="education">
+    <h1 class="section-title">{{ page.education_title }}</h1>
+    <div class="section-body">
+        <ul class="list-group list-group-flush">
+            {% for education in list %}
+            <li class="list-group-item">
+                <h2 class="education-name">{{ education.name }}</h2>
+                <h6 class="education-school">{{ education.school }}</h6>
+                <span class="education-span">{{ education.location }} | {{ education.date }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
