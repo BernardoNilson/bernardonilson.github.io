@@ -5,7 +5,7 @@ category: works
 
 img: /assets/img/bet_system/bet.png
 title: BetSystem | Dell IT Academy
-technologies: Flask, HTML, CSS, Python, Peeweee SQLite
+technologies: Flask, HTML, CSS, Python, Peewee e SQLite
 description: O BetSystem é um projeto desenvolvido durante o processo seletivo do Projeto IT Academy da Dell em parceria com a PUCRS. A aplicação visa gerenciar apostas em jogos semelhantes à Mega-Sena®, permitindo aos usuários registrar suas apostas, acompanhar os sorteios, verificar os resultados e visualizar os ganhadores.
 ---
 
