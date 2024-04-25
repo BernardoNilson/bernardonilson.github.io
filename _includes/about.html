@@ -12,13 +12,13 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{ '/assets/img/working.jpeg' | relative_url }}" class="d-block" alt="...">
+                    <img src="{{ '/assets/img/working.jpeg' | relative_url }}" class="d-block" alt="Working">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ '/assets/img/me.jpeg' | relative_url }}" class="d-block" alt="...">
+                    <img src="{{ '/assets/img/me.jpeg' | relative_url }}" class="d-block" alt="At lake">
                 </div>
                 <div class="carousel-item">
-                    <img src="{{ '/assets/img/bike.jpeg' | relative_url }}" class="d-block" alt="...">
+                    <img src="{{ '/assets/img/bike.jpeg' | relative_url }}" class="d-block" alt="Cycling">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
@@ -33,8 +33,8 @@
             </button>
         </div>
         <div class="section-text">
-            <h1 class="section-title">{{ page.about_title }}</h1>
-            <p>{{ page.about }}</p>
+            <h1 class="section-title">{{ page.about.title }}</h1>
+            <p>{{ page.about.text }}</p>
         </div>
     </div>
 </section>

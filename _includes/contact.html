@@ -7,9 +7,9 @@
             <img src="{{ site.me }}" alt="Bernardo">
         </div>
         <a class="brand" href="/">{{ site.title }}</a>
-        <p>{{ page.contact }}</p>
-        <h1 class="section-title">{{ page.contact_title }}</h1>
-        <a type="button" class="btn btn-outline-secondary" href="mailto:{{ site.email.personal }}">{{ page.contact_call }}</a>
+        <p>{{ page.contact.text }}</p>
+        <h1 class="section-title">{{ page.contact.title }}</h1>
+        <a type="button" class="btn btn-outline-secondary" href="mailto:{{ site.email.personal }}">{{ page.contact.call }}</a>
         <div class="social-icons">
             {% for contact in list %}
             <a href="{{ contact.link }}">{{ contact.icon }}</a>

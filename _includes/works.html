@@ -8,7 +8,7 @@
 
 <!-- WORKS -->
 <section class="section works" id="works">
-    <h1 class="section-title">{{ page.works_title }}</h1>
+    <h1 class="section-title">{{ page.works.title }}</h1>
     <div class="section-body">
             {% for work in list %}
             <a href="{{ work.url | relative_url }}" class="card">
@@ -17,7 +17,7 @@
                     <h5 class="card-title">{{ work.title }}</h5>
                     <p class="card_description">{{ work.description }}</p>
                     <p class="card-tech">{{ work.technologies }}</p>
-                    <button href="{{ work.url | relative_url }}" class="btn btn-secondary">{{ page.works_call }}</button>
+                    <button href="{{ work.url | relative_url }}" class="btn btn-secondary">{{ page.works.call }}</button>
                 </div>
             </a>
             {% endfor %}

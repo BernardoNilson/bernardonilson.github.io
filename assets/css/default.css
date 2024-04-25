@@ -72,6 +72,12 @@ footer {
   color: var(--secondary-color) !important;
 }
 
+.nav-item:hover .flag {
+  text-shadow: 0 0 2px var(--text-light-color);
+  text-decoration: none;
+  transition: none;
+}
+
 /* SECTION */
 .section {
   margin: 7rem auto;
