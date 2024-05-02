@@ -29,6 +29,22 @@ phone: +55 51 98424-4706
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://bernardonilson.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
+nav:
+  pt:
+    intro: Início
+    about: Sobre mim
+    experience: Experiência
+    works: Projetos
+    education: Educação
+    contact: Contato
+  en: 
+    intro: Home
+    about: About me
+    experience: Experience
+    works: Works
+    education: Education
+    contact: Contact
+
 # Build settings
 theme: minima
 plugins:

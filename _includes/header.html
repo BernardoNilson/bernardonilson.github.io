@@ -1,11 +1,7 @@
 {% if page.lang == 'en' %}
 {% assign base_url = '/en/'  %}
-{% assign change_to = '/'  %}
-{% assign flag = '🇺🇸'  %}
 {% else %}
 {% assign base_url = '/'  %}
-{% assign change_to = '/en/'  %}
-{% assign flag = '🇧🇷'  %}
 {% endif %}
 
 <nav class="navbar navbar-expand-lg sticky-top">
@@ -20,29 +16,40 @@
         <div class="collapse navbar-collapse" id="links">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="{{ base_url }}">Home</a>
+                    <a class="nav-link active" aria-current="page" href="{{ base_url }}">{{ site.nav.[page.lang].intro }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ base_url }}#about">About me</a>
+                    <a class="nav-link" href="{{ base_url }}#about">{{ site.nav.[page.lang].about }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ base_url }}#experience">Experience</a>
+                    <a class="nav-link" href="{{ base_url }}#experience">{{ site.nav.[page.lang].experience }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ base_url }}#works">Works</a>
+                    <a class="nav-link" href="{{ base_url }}#works">{{ site.nav.[page.lang].works }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ base_url }}#education">Education</a>
+                    <a class="nav-link" href="{{ base_url }}#education">{{ site.nav.[page.lang].education }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ base_url }}#contact">Contact</a>
+                    <a class="nav-link" href="{{ base_url }}#contact">{{ site.nav.[page.lang].contact }}</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link flag" href="{{ change_to }}">{{ flag }}</a>
+                    <select id="dropdown" class="form-select">
+                        <option {% if page.lang == 'pt' %}selected{% endif %} value="/">PT</option>
+                        <option {% if page.lang == 'en' %}selected{% endif %} value="/en">EN</option>
+                    </select>
                 </li>
             </ul>
         </div>
-
-        <!-- Switch languages or Night mode-->
     </div>
 </nav>
+
+<script>
+    document.getElementById("dropdown").addEventListener("change", function() {
+        var selectedOption = this.options[this.selectedIndex];
+        if (selectedOption.value !== "") {
+            window.location.href = selectedOption.value;
+        }
+    });
+</script>
+    

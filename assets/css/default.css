@@ -1,7 +1,8 @@
 /* CONFIGURAÇÕES GERAIS */
 :root {
-  --primary-color: #fffcfc;
-  --hover-color: rgb(213, 223, 255);
+  --primary-color: rgb(252, 252, 255);
+  /* --hover-color: rgb(213, 223, 255); */
+  --hover-color: rgb(225, 225, 234);
   --secondary-color: #4167e7;
   --text-color: #141313;
   --text-light-color: #2e2e2e;
@@ -140,6 +141,7 @@ footer {
 
 .card:hover {
   font-weight: 450;
+  box-shadow: 0 0 15px var(--hover-color);
   transition: 0.3s;
 }
 /* WORKS */
@@ -155,9 +157,18 @@ footer {
   text-decoration: none;
 }
 
+.works .card:hover {
+  font-weight: normal;
+}
+
 .works .section-body {
+  align-items: start;
   display: flex;
   flex-direction: row;
+}
+
+.works .section-body a {
+  width: 33%;
 }
 
 /* EDUCATION */
@@ -249,6 +260,10 @@ footer {
 
   .works .section-body {
     flex-direction: column;
+  }
+
+  .works .section-body a {
+    width: 100%;
   }
 }
 
