@@ -15,7 +15,3 @@ Jekyll é um gerador de sites estáticos, escrito em Ruby. Ele é usado para cri
 - [Bootstrap](https://getbootstrap.com/): 5.3.2
 
 > Execução: `bundle exec jekyll serve`
-
-#### Ainda em construção...
-- https://akio-jekyll.netlify.app/
-- https://fonts.google.com/specimen/Urbanist?preview.text=Bernardo%20Nilson&query=Urbanist&classification=Display&sort=popularity
